@@ -1,0 +1,24 @@
+$backgroundColor: #FAFAFA;
+$buttonDefaultColor: #D87D4A;
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: $backgroundColor;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
