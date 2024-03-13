@@ -1,0 +1,43 @@
+
+.main {
+    background-image: url('../../../public/assets/home/mobile/image-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #FFFFFF;
+    padding-block: 108px 112px;
+}
+
+.main__hero {
+    width: 87.467%;
+    text-align: center;
+}
+
+.main__hero--center {
+    margin-inline: auto;
+}
+
+.hero__h2 {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.49;
+    letter-spacing: 10px;
+    line-height: auto;
+    padding-bottom: 1rem;
+}
+
+.hero__h1 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 1.29px;
+    padding-bottom: 1.5rem;
+}
+
+.hero__p {
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    padding-bottom: 1.75rem;
+}
