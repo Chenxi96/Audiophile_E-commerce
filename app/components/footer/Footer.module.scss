@@ -1,0 +1,39 @@
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #101010;
+    color: #FFFFFF;
+    gap: 48px;
+    padding-bottom: 38px;
+}
+
+.footer__logo {
+    padding-top: 48px;
+    border-top: 4px solid #D87D4A;
+}
+
+
+.footer__description {
+    width: 87.201%;
+    opacity: 0.5;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer__copyright {
+    opacity: 0.5;
+}
+
+.footer__social {
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .footer_logo {
+        align-self: flex-start;
+    }
+}
