@@ -24,9 +24,22 @@
     color: #D87D4A;
 }
 
+@media screen and (min-width: 768px) {
+    .footerNav__list {
+        flex-direction: row;
+        margin-left: 39px;
+    }
+}
+
 @media screen and (min-width: 992px) {
     .nav__list {
         display: flex;
         gap: 34px;
+    }
+
+    .footerNav__list {
+        position: absolute;
+        right: 165px;
+        top: 60px;
     }
 }
