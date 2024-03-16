@@ -1,12 +1,28 @@
+'use client'
+import { useEffect, useState } from "react"
 import Image from "next/image"
 import bestGear from '../../../public/assets/shared/mobile/image-best-gear.jpg'
+import bestGearTab from '../../../public/assets/shared/tablet/image-best-gear.jpg'
+import bestGearDesk from '../../../public/assets/shared/desktop/image-best-gear.jpg'
 import styles from './Benefits.module.scss'
 
 export default function Benefits() {
+    const [width, setWidth] = useState(window.innerWidth)
+
+    useEffect(() => {
+        window.addEventListener('resize', () => {
+            setWidth(window.innerWidth)
+        })
+        return () => {
+            window.removeEventListener('resize', () => {
+                setWidth(window.innerWidth)
+            })
+        }
+    }, [])
     return(
         <section className={styles.section}>
-            <Image className={styles.section__image} src={bestGear}/>
-            <div>
+            <Image className={styles.section__image} src={width < 768 ? bestGear : (width < 992 ? bestGearTab : bestGearDesk)} alt="image" />
+            <div className={styles.section__info}>
                 <h2 className={styles.description__h2}>
                     BRINGING YOU THE <span className={styles.h2__span}>BEST</span> AUDIO GEAR
                 </h2>
