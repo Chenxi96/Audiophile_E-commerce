@@ -2,7 +2,7 @@ import { manrope } from '../../fonts'
 import Button from '../button/Button'
 import hero from './Hero.module.scss'
 
-export default function Hero({text}) {
+export default function Hero({text, name}) {
     return(
         <main className={`${hero.main} ${manrope.className}`}>
             <div className={`${hero.main__hero}`}>
@@ -11,7 +11,7 @@ export default function Hero({text}) {
                 <p className={hero.hero__p}>
                     Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.
                 </p>
-                <Button text={text} />
+                <Button text={text} name={name} />
             </div>
         </main>
     )

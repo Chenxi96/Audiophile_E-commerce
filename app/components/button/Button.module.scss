@@ -7,10 +7,34 @@
 .main__button {
     padding-block: 15px;
     padding-inline: 1.875rem;
-    background-color: #D87D4A;
     color: #FFFFFF;
 }
 
 .main__button:hover {
     background-color: #FBAF85;
+}
+
+.main__button--primary {
+    background-color: #D87D4A;
+}
+
+.main__button--secondary {
+    background-color: #000000;
+    font-weight: 700;
+}
+
+.main__button--secondary:hover {
+    background-color: #4C4C4C;
+}
+
+.main__button--tertiary {
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    color: #000000;
+    font-weight: 700;
+}
+
+.main__button--tertiary:hover {
+    background-color: #000000;
+    color: #FFFFFF;
 }
