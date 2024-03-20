@@ -20,6 +20,11 @@
 
 .main__button--secondary {
     background-color: #000000;
+    font-weight: 700;
+}
+
+.main__button--secondary:hover {
+    background-color: #4C4C4C;
 }
 
 .main__button--tertiary {
